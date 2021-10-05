@@ -19,11 +19,17 @@
     --body-color: #FBFEFD;
     --container-color: #FFFFFF;
   
-  }
+}
+
+body.dark-theme{
+    --title-color: #F1F3F2;
+    --text-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
+}
 
 html{
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 header {
@@ -34,6 +40,8 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    background-color: #FFFFFF;
+    z-index: 99999;
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
@@ -58,9 +66,10 @@ nav {
 }
 
 .menu_header {
-    justify-content: center;
+    justify-content:center;
     align-content: center;
     display: flex;
+    z-index: 9999;
 }
 
 .nav_list {
@@ -69,6 +78,7 @@ nav {
     list-style: none;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .nav_list li {
@@ -93,10 +103,24 @@ margin-left: 3rem;
     cursor: pointer;
 }
 
+.change_darkmode {
+    display: flex;
+}
+
+#close_icon {
+    display: none;
+}
+#close_icon.active {
+    display: flex;
+}
+
+#menu_icon.none {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .menu_toggle {
         display: flex;
-        z-index: 99;
     }
     .menu_header{
         position: absolute;
@@ -127,6 +151,82 @@ margin-left: 3rem;
     }
 }
 
-.change_darkmode {
+main {
+    position: relative;
+    top: 100px;
+    height: auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+.home {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(99vh - 20rem);
+}
+
+.home_title {
+    color: var(--first-color);
+    font-size: 4.25rem;
+}
+.home_subtitle {
+    font-size: 2.25rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.img_home {
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.about_img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+}
+
+.about_content {
+   display: block;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--first-color);
+}
+
+.about_title {
+    font-size: 3rem;
+}
+
+.about_description {
+    display: block;
+    width: calc(100% - 500px);
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.button_home, .button_about {
+    text-decoration: none;
+    background-color: var(--first-color);
+    padding: 8px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+.button_home:hover, .button_about:hover {
+    background-color: var(--first-color-alt);
 }

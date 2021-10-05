@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>Tasty Restaurante</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,11 +31,48 @@
                 </div>
             </div>
             <div class="menu_toggle">
-                <box-icon name='menu' id="menu"></box-icon>
+                <box-icon name='menu' id="menu_icon"></box-icon>
+                <box-icon name='x' id="close_icon"></box-icon>
             </div>
         </nav>
     </header>
-    
+
+    <main>
+        <section class="s01">
+           <article class="home">
+            <div class="home_content">
+                <h1 class="home_title">Tasty food</h1>
+                <h2 class="home_subtitle">Try the best food of <br> the week.</h2>
+                <a href="#" class="button_home">View Menu</a>
+            </div>
+            <img src="/img/home.png" class="img_home" alt="fotohome">
+           </article>
+        </section>
+
+        <section class="s02">
+           <article class="about">
+            <figure>
+                <img src="/img/about.jpg" class="about_img" alt="foto_about">
+            </figure>
+
+            <div class="about_content">
+                <span class="section-subtitle">About us</span>
+                <h2 class="about_title">We cook the best <br> tasty food</h2>
+                <p class="about_description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                <a href="#" class="button_about">Explore history</a>
+            </div>
+           </article>
+        </section>
+
+        <section class="s03">
+
+        </section>
+
+        <section class="s04">
+
+        </section>
+    </main>
     <script src="/js/script.js"></script>
 </body>
+
 </html>
