@@ -170,7 +170,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: calc(99vh - 16rem);
+    height: calc(100vh - --header-height);
 }
 
 .home_title {
@@ -240,7 +240,7 @@ main {
     display: grid;
     place-items: center;
     text-align: center;
-    height: calc(100vh - 13rem);
+    height: calc(100vh - 4rem);
 }
 
 .services_title h1 {
@@ -276,6 +276,68 @@ main {
     margin-bottom: 1rem;
 }
 
+/* MENU */
+
+.menu_box {
+    display: grid;
+    place-items: center;
+    height: 100vh;    
+}
+
+.section_title {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    padding: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.2);
+    width: 300px;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transform: scale(0.97);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1);
+}
+
+figure {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.description_plate {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.cart {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+    background: var(--first-color);
+    border-radius:  8px 0 8px 0;
+}
+
 /* SECTION CONTACT */
 .contact {
     display: flex;
@@ -298,7 +360,7 @@ main {
 
 /* titulos das Sections */
 
-.about-subtitle, .services_subtitle, .contact_title {
+.about-subtitle, .services_subtitle, .contact_title, .menu_title {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--first-color);
