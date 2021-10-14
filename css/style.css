@@ -163,6 +163,9 @@ main {
     width: 100%;
 }
 
+
+/* HOME SECTION */
+
 .home {
     display: flex;
     justify-content: space-around;
@@ -186,6 +189,8 @@ main {
     max-width: 450px;
 }
 
+/* ABOUT SECTION */
+
 .about {
     display: grid;
     place-items: center;
@@ -204,25 +209,13 @@ main {
    display: block;
 }
 
-.section-subtitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--first-color);
-}
-
 .about_title {
     font-size: 3rem;
 }
 
-.about_description {
-    display: block;
-    width: calc(100% - 300px);
-    color: var(--text-color);
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
+/* ICONS E BUTTONS */
 
-.button_home, .button_about {
+.button_home, .button_about, .button_contact {
     text-decoration: none;
     background-color: var(--first-color);
     padding: 8px;
@@ -231,7 +224,7 @@ main {
     transition: 0.3s ease;
 }
 
-.button_home:hover, .button_about:hover {
+.button_home:hover, .button_about:hover, .button_contact:hover {
     background-color: var(--first-color-alt);
 }
 
@@ -241,17 +234,13 @@ main {
    color:#069c54,
 }
 
+/* SECTION SERVICES */
+
 .services {
     display: grid;
     place-items: center;
     text-align: center;
     height: calc(100vh - 13rem);
-}
-
-.services_title span {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--first-color);
 }
 
 .services_title h1 {
@@ -264,6 +253,8 @@ main {
     align-items: center;
 }
 
+
+/* PADRAO DAS SECTIONS */
 .excellent_food, .fast_food, .delivery {
     display: flex;
     flex-direction: column;
@@ -271,6 +262,44 @@ main {
     align-items: center;
 }
 
-.food_description, .fastfood_description, .delivery_description {
-    width: calc(100% - 180px);
+/* TEXTO DAS SECTIONS */
+
+.food_description, .fastfood_description, .delivery_description, .contact_description {
+    width: calc(100% - 200px);
+}
+
+.about_description {
+    display: block;
+    width: calc(100% - 300px);
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* SECTION CONTACT */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 6rem);
+}
+
+.contact_cotent {
+    display: block;
+}
+
+.subtitle_contact {
+    font-size: 3rem;
+}
+
+.contact_description {
+    margin-top: 36px;
+}
+
+/* titulos das Sections */
+
+.about-subtitle, .services_subtitle, .contact_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--first-color);
 }
