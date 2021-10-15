@@ -163,6 +163,53 @@ main {
     width: 100%;
 }
 
+/* TITULOS das Sections */
+.section_title {
+    text-align: center;
+}
+
+.about-subtitle, .services_subtitle, .contact_title, .menu_title, .app_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--first-color);
+}
+
+.subtitle_app {
+    margin-bottom: 2rem;
+}
+
+.services_title h1 {
+    font-size: 3rem;
+}
+
+.subtitle_contact {
+    font-size: 3rem;
+}
+
+.about_title {
+    font-size: 3rem;
+}
+
+/* TEXTO DAS SECTIONS */
+.food_description, .fastfood_description, .delivery_description, .contact_description {
+    width: calc(100% - 200px);
+}
+
+.about_description {
+    display: block;
+    width: calc(100% - 300px);
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text_app {
+    display: block;
+}
+
+.contact_description {
+    margin-top: 36px;
+}
 
 /* HOME SECTION */
 
@@ -209,10 +256,6 @@ main {
    display: block;
 }
 
-.about_title {
-    font-size: 3rem;
-}
-
 /* ICONS E BUTTONS */
 
 .button_home, .button_about, .button_contact {
@@ -243,10 +286,6 @@ main {
     height: calc(100vh - 4rem);
 }
 
-.services_title h1 {
-    font-size: 3rem;
-}
-
 .services_content {
     display: flex;
     justify-content: center;
@@ -262,30 +301,12 @@ main {
     align-items: center;
 }
 
-/* TEXTO DAS SECTIONS */
-
-.food_description, .fastfood_description, .delivery_description, .contact_description {
-    width: calc(100% - 200px);
-}
-
-.about_description {
-    display: block;
-    width: calc(100% - 300px);
-    color: var(--text-color);
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
 /* MENU */
 
 .menu_box {
     display: grid;
     place-items: center;
     height: 100vh;    
-}
-
-.section_title {
-    text-align: center;
 }
 
 .cards {
@@ -338,6 +359,38 @@ figure {
     border-radius:  8px 0 8px 0;
 }
 
+.menu_app {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-app img {
+    width: 70%;
+    height: 90%;
+}
+
+.description_app {
+    display: block;
+    width: calc(100% - 300px);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.btn_app {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.btn_app img {
+    width: 180px;
+    height: 60px;
+    margin-left: 8px;
+}
+
 /* SECTION CONTACT */
 .contact {
     display: flex;
@@ -348,20 +401,4 @@ figure {
 
 .contact_cotent {
     display: block;
-}
-
-.subtitle_contact {
-    font-size: 3rem;
-}
-
-.contact_description {
-    margin-top: 36px;
-}
-
-/* titulos das Sections */
-
-.about-subtitle, .services_subtitle, .contact_title, .menu_title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--first-color);
 }
