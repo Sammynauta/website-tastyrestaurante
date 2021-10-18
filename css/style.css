@@ -31,6 +31,25 @@ body.dark-theme{
 html{
     scroll-behavior: smooth;
 }
+body {
+    position: relative;
+}
+
+.upscroll {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    border-radius: 5px;
+    background: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    width: 40px;
+    z-index: 1000;
+    height: 40px;
+}
 
 header {
     display: flex;
@@ -401,4 +420,56 @@ figure {
 
 .contact_cotent {
     display: block;
+}
+
+footer {
+    height: auto;
+    padding: 1rem;
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0.26) 0%, rgba(161, 161, 161, 0.644) 100%);
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_midia {
+    display: block;
+}
+.footer_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--first-color);
+}
+
+.footer_subtitle {
+    color: var(--text-color);
+}
+
+.footer_icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_info span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.footer_info ul li {
+    list-style: none;
+}
+
+.footer_info ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-top: 0.8rem;
+    pad: 5px;
 }
