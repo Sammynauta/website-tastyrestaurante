@@ -471,5 +471,136 @@ footer {
     text-decoration: none;
     color: var(--text-color);
     margin-top: 0.8rem;
-    pad: 5px;
+    padding: 5px;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .home_content {
+        margin-bottom: 1rem;
+    }
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .about_content {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    /*TITULOS DAS SECTIONS */
+    .about-subtitle, .services_subtitle, .contact_title, .menu_title, .app_title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--first-color);
+    }
+    
+    .subtitle_app {
+        margin-bottom: 2rem;
+    }
+    
+    .services_title h1 {
+        font-size: 3rem;
+    }
+    
+    .subtitle_contact {
+        font-size: 2.5rem;
+    }
+
+    .services_title {
+      margin-top: 1rem;
+    }
+    .services_subtitle {
+        font-size: 1rem;
+    }
+    .services_title h1 {
+        font-size: 2rem;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .about, .services {
+        margin-bottom: 5rem;
+    }
+    .services_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_box {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .menu_app {
+        margin-top: 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text_app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer_content {
+        display: block;
+    }
+    .footer_midia {
+        margin-bottom: 1rem;
+    }
+
+
+    /*ICONS E BTNS */
+    .button_home, .button_about, .button_contact {
+        text-decoration: none;
+        background-color: var(--first-color);
+        padding: 10px 6px;
+        border-radius: 6px;
+        color: #FFFFFF;
+        transition: 0.3s ease;
+        margin-bottom: 4px;
+    }
+
+    .btn_app {
+        display: flex;
+        justify-content: center;
+    }
+    .footer_icons {
+        width: 200px;
+    }
 }
